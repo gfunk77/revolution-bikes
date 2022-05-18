@@ -1,0 +1,95 @@
+/* 
+==========
+fonts
+==========
+*/
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@500&family=Merriweather+Sans:ital@1&display=swap");
+
+/* 
+==========
+variables
+==========
+*/
+
+:root {
+  --clrPrimary: #1c3144;
+  --clrSecondary: #3f88c5;
+  --clrGrey1: #102a42;
+  --clrGrey5: #617d98;
+  --clrGrey10: #f1f5f8;
+  --clrWhite: #fff;
+  --clrBlack: #222;
+  --ffPrimary: "Alegreya Sans", sans-serif;
+  --ffSecondary: "Merriweather Sans", sans-serif;
+  --spacing: 0.25rem;
+  --radius: 0.5rem;
+  --transition: all 300ms linear;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--clrWhite);
+  color: var(--clrGrey1);
+  font-family: var(--ffPrimary);
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+h1,
+h2,
+h4 {
+  letter-spacing: var(--spacing);
+  line-height: 1.25;
+  text-transform: capitalize;
+  margin-bottom: 0.75rem;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font: size 1.5rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+p {
+  margin-bottom: 1.25rem;
+}
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h4 {
+    line-height: 1;
+  }
+}
