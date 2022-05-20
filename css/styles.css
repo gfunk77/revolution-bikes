@@ -113,6 +113,31 @@ p {
 .btn:hover {
   background-color: var(--clrSecondary);
 }
+.clearfix::after,
+.clearfix::before {
+  content: "";
+  clear: both;
+  display: table;
+}
+.section-title {
+  margin-bottom: 2rem;
+}
+.section-title h3 {
+  color: var(--clrSecondary);
+  font-family: var(--ffSecondary);
+}
+.section-center {
+  padding: 4rem 0;
+  width: 85vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+@media screen and (min-width: 992px) {
+  .section-center {
+    width: 95vw;
+    padding: 4rem 1rem;
+  }
+}
 /* 
 ==========
 header
@@ -149,4 +174,100 @@ header
   font-size: 1.25rem;
   outline: 0.125rem solid var(--clrSecondary);
   outline-offset: 0.25rem;
+}
+.content-divider {
+  height: 0.5rem;
+  background: linear-gradient(
+    to left,
+    rgb(220, 165, 29),
+    rgb(224, 203, 151),
+    rgb(173, 126, 7)
+  );
+}
+/* 
+==========
+skills
+==========
+*/
+.skills {
+  background: var(--clrGrey10);
+}
+.skill {
+  padding: 2rem 0;
+  text-align: center;
+  color: var(--clrGrey5);
+  transition: var(--transition);
+}
+.skill:hover {
+  background: var(--clrWhite);
+  box-shadow: 0 3px var(--clrPrimary);
+}
+.skill:hover .skill-icon {
+  transform: translateY(-5px);
+}
+.skill-icon {
+  display: inline-block;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--clrPrimary);
+  transition: var(--transition);
+}
+
+.skill-title {
+  color: var(--clrGrey1);
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+.skill-text {
+  max-width: 25em;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 576px) {
+  .skill {
+    float: left;
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .skill {
+    width: 25%;
+  }
+}
+/* 
+==========
+About
+==========
+*/
+.about-img,
+.about-info {
+  padding: 2rem 0;
+}
+.about-picture-container {
+  background: var(--clrPrimary);
+  border: 0.5rem solid var(--clrPrimary);
+  max-width: 30rem;
+  overflow: hidden;
+}
+.about-picture {
+  transition: var(--transition);
+}
+.about-picture-container:hover .about-picture {
+  opacity: 0.7;
+  transform: scale(1.2);
+}
+.about-text {
+  max-width: 25rem;
+  color: var(--clrGrey5);
+}
+@media screen and (min-width: 992px) {
+  .about-img,
+  .about-info {
+    float: left;
+    width: 50%;
+  }
+}
+.about-info {
+  padding-left: 2rem;
 }
