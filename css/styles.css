@@ -271,3 +271,59 @@ About
 .about-info {
   padding-left: 2rem;
 }
+/* 
+==========
+Products
+==========
+*/
+
+.products {
+  background: var(--clrGrey10);
+}
+.products article {
+  padding: 2rem 0;
+}
+.product-text {
+  color: var(--clrGrey5);
+  max-width: 20rem;
+}
+.product {
+  margin-bottom: 2rem;
+}
+.product-img {
+  border-radius: var(--radius);
+  margin-bottom: 2rem;
+  height: 15rem;
+  object-fit: cover;
+}
+.product-price {
+  color: var(--clrPrimary);
+}
+@media screen and (min-width: 768px) {
+  .product {
+    float: left;
+    width: 50%;
+    padding-right: 2rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .product {
+    width: 33.33%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products-inventory {
+    float: left;
+    width: 70%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products-info {
+    float: left;
+    width: 30%;
+  }
+  .product {
+    margin-bottom: 0;
+    padding: 0 1rem;
+  }
+}
