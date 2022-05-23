@@ -101,12 +101,12 @@ p {
   text-transform: uppercase;
   letter-spacing: var(--spacing);
   font-family: var(--ffSecondary);
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 700;
   display: inline-block;
   border: none;
   cursor: pointer;
-  padding: 0.75rem 1rem;
+  padding: 0.6rem 0.9rem;
   transition: var(--transition);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
@@ -325,5 +325,77 @@ Products
   .product {
     margin-bottom: 0;
     padding: 0 1rem;
+  }
+}
+/* 
+==========
+Services
+==========
+*/
+.services-title {
+  margin: 4rem 0;
+  text-align: center;
+  margin-bottom: -4rem;
+}
+.service-card {
+  background: var(--clrGrey10);
+  margin: 2rem 0;
+  border-radius: var(--radius);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: var(--transition);
+}
+.service-card:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transform: scale(1.02);
+}
+.service-img {
+  height: 17rem;
+  object-fit: cover;
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+}
+.service-info {
+  text-align: center;
+  padding: 3rem 1rem 2.5rem 1rem;
+}
+.service-info p {
+  color: var(--clrGrey5);
+  max-width: 20rem;
+  margin: 0 auto;
+}
+.service-btn {
+  padding: 0.2rem 0.5rem;
+  text-transform: capitalize;
+  border-radius: var(--radius);
+  margin-top: 1.25rem;
+  font-weight: 400;
+  font-size: 0.75rem;
+}
+.service-img-container {
+  position: relative;
+}
+.service-icon {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+  font-size: 2rem;
+  color: var(--clrPrimary);
+  background: var(--clrSecondary);
+  border-radius: 50%;
+  padding: 0.3rem 0.9rem;
+  border: 0.5rem solid var(--clrGrey10);
+}
+@media screen and (min-width: 768px) {
+  .service-card {
+    float: left;
+    width: 45%;
+    margin-right: 5%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .service-card {
+    width: 30%;
+    margin-right: 3.333%;
   }
 }
