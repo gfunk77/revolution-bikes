@@ -12,8 +12,8 @@ variables
 */
 
 :root {
-  --clrPrimary: darkgoldenrod;
-  --clrSecondary: goldenrod;
+  --clrPrimary: #b8860b;
+  --clrSecondary: #daa520;
   --clrGrey1: #102a42;
   --clrGrey5: #617d98;
   --clrGrey10: #f1f5f8;
@@ -397,5 +397,78 @@ Services
   .service-card {
     width: 30%;
     margin-right: 3.333%;
+  }
+}
+/* 
+==========
+Contacts
+==========
+*/
+
+.contact {
+  background-color: var(--clrGrey10);
+}
+
+.contact-form,
+.contact-info {
+  margin: 1rem 0;
+}
+.contact-item {
+  margin-bottom: 1.75rem;
+}
+.contact-title {
+  color: var(--clrPrimary);
+  font-weight: 400;
+}
+.contact-text {
+  text-transform: uppercase;
+}
+.contact-form {
+  background: var(--clrWhite);
+  border-radius: var(--radius);
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: var(--transition);
+}
+.contact-form:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.contact-form h3 {
+  color: var(--clrGrey5);
+  text-transform: capitalize;
+  padding: 1.25rem;
+}
+.form-group {
+  padding: 1rem 1.5rem;
+}
+.form-control {
+  display: block;
+  margin-bottom: 1.25rem;
+  padding: 0.75rem 1rem;
+  text-transform: uppercase;
+  letter-spacing: var(--spacing);
+  border: none;
+  border-radius: var(--radius);
+  width: 100%;
+  background-color: var(--clrGrey10);
+}
+.form-control::placeholder {
+  color: var(--clrGrey5);
+  letter-spacing: var(--spacing);
+  font-family: var(--ffPrimary);
+  text-transform: uppercase;
+}
+.submit-btn {
+  display: block;
+  padding: 1rem;
+  width: 100%;
+  border-bottom-left-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+}
+@media screen and (min-width: 992px) {
+  .contact-info,
+  .contact-form {
+    float: left;
+    width: 50%;
   }
 }
